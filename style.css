@@ -13,15 +13,15 @@ body{
 .container{
 	width: 430px;
 	height: auto;
-	padding: 1.5rem;
+	padding: 1.5rem 2.5rem;
 	text-align: start;
 	border-radius: 0px;
 	background: linear-gradient(315deg, #317469, #3a8a7d);
 	box-shadow:  -13px -13px 26px #1f4a43,
 				 13px 13px 26px #0b4339;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: start;
 	flex-direction: column;
 }
 
@@ -33,21 +33,29 @@ h1 {
 form {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	margin-bottom: 2.1rem;
+	width: 100%;
 }
 
 label {
-	margin-bottom: 10px;
-	font-size: 20px;
+	margin-bottom: 0.77rem;
+	font-size: 1.5rem;
+	font-weight: 500;
 }
 
 input[type="number"] {
-	padding: 5px;
+	width: 70%;
+	padding: 0.7rem 0.5rem;
 	font-size: 16px;
 	border: none;
-	border-radius: 5px;
+	border-radius: 0px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	margin-bottom: 1.2rem;
+}
+input:is(:hover, :focus, .active:hover:focus, .active:focus){
+	outline: none;
+	border: none;
 }
 
 button {
