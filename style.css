@@ -11,18 +11,19 @@ body{
 	display: none;
 }
 .container{
-	width: 430px;
+	width: 410px;
 	height: auto;
-	padding: 1.5rem 2.5rem;
+	padding: 1.5rem 2rem;
 	text-align: start;
 	border-radius: 0px;
-	background: linear-gradient(315deg, #317469, #3a8a7d);
-	box-shadow:  -13px -13px 26px #1f4a43,
-				 13px 13px 26px #0b4339;
+	/* background: linear-gradient(315deg, #317469, #3a8a7d); */
+	box-shadow:  0px 0px 26px #1f4a43,
+				 0px 0px 26px #0b4339;
 	display: flex;
 	align-items: flex-start;
 	justify-content: start;
 	flex-direction: column;
+	transform: translate(10px, 0);
 }
 
 h1 {
@@ -45,7 +46,7 @@ label {
 }
 
 input[type="number"] {
-	width: 70%;
+	width: 95%;
 	padding: 0.7rem 0.5rem;
 	font-size: 16px;
 	border: none;
@@ -59,22 +60,26 @@ input:is(:hover, :focus, .active:hover:focus, .active:focus){
 }
 
 button {
-	padding: 10px 20px;
+	width: 73%;
+	padding: 0.8rem 0.9rem;
 	font-size: 20px;
 	border: none;
-	border-radius: 5px;
-	background-color: #4CAF50;
+	border-radius: 0px;
+	background-color: #083063;
 	color: #fff;
 	cursor: pointer;
+	margin-top: 1rem;
+	transition: 0.55s ease-out;
 }
 
 button:hover {
-	background-color: #3e8e41;
+	background-color: #104180;
 }
 
 #result {
 	font-size: 24px;
 	font-weight: bold;
-	color: #4CAF50;
-	margin-top: 20px;
+	color: #a7ffb8;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
 }
